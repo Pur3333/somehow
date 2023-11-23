@@ -35,7 +35,6 @@ public class Main {
         System.out.println("Сумма элементов массива = " + sum + "\nМинимальный элемент массива: " +
                 min + "\nМаксимальный элемент: " + max);
     }
-    static void third_task()
     static void fourth_task() {
         int i = 0, row = 0;
         do {
@@ -55,7 +54,8 @@ public class Main {
         int n = scan.nextInt();
         first_task(n);
         second_task(n);
-        //third_task(output comm lines args)
+        for (int i = 0; i < args.length; i++)
+            System.out.println("Аргумент " + (i+1) + ": " + args[i]);
         fourth_task();
         System.out.println(fiveth_task(5));
     }
